@@ -31,6 +31,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let image = image[indexPath.row]
         cell.animalLabel.text = data[indexPath.row]
         cell.animalImageView.image = UIImage(named: image)
+        cell.animalImageView.layer.cornerRadius =  10
+        cell.animalImageView.clipsToBounds = true
+        cell.layer.shadowColor = UIColor.lightGray.cgColor
+        cell.layer.shadowOffset = CGSize(width:3, height:3)
+        cell.layer.shadowOpacity = 3
+        cell.layer.shadowRadius = 3
+        cell.layer.cornerRadius = 5
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.lightGray.cgColor
         return cell
     }
     
@@ -38,6 +47,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let data = data[indexPath.row]
         let vc = DetailAnimalsViewController(data: data)
         navigationController?.pushViewController(vc, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         print("tapped \(data)")
         
     }
