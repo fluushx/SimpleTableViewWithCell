@@ -7,20 +7,7 @@
 
 import UIKit
 
-struct Results:Codable{
-    let data:[Animals]
-}
-
-struct Animals:Codable{
-    let type:String
-    let image:String
-    let description:[String]
-}
-
-//struct Description:Codable{
-//    let features:String
-//}
-
+ 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var dataAnimals:Results?
@@ -67,9 +54,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let vc = DetailAnimalsViewController(data: data!)
         navigationController?.pushViewController(vc, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        //sprint("tapped \(data)")
-        
     }
     
     func readJson(){

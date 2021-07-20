@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		87109DB626A73CC4006A8236 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 87109DB526A73CC4006A8236 /* data.json */; };
+		87109DB926A74906006A8236 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87109DB826A74906006A8236 /* Entities.swift */; };
 		875AB74026A23EB000D4F632 /* DetailAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875AB73F26A23EB000D4F632 /* DetailAnimalsViewController.swift */; };
 		875AB74426A250A500D4F632 /* DetailAnimalsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875AB74326A250A500D4F632 /* DetailAnimalsView.xib */; };
 		876FB07926A27898006D412C /* DetailAnimalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FB07726A27898006D412C /* DetailAnimalsTableViewCell.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		87109DB526A73CC4006A8236 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		87109DB826A74906006A8236 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		875AB73F26A23EB000D4F632 /* DetailAnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnimalsViewController.swift; sourceTree = "<group>"; };
 		875AB74326A250A500D4F632 /* DetailAnimalsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAnimalsView.xib; sourceTree = "<group>"; };
 		876FB07726A27898006D412C /* DetailAnimalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnimalsTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87109DB726A748F6006A8236 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				87109DB826A74906006A8236 /* Entities.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		875AB73E26A23E9400D4F632 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 		87C18F79269CF54700F0F813 /* SimpleTableViewWithCell */ = {
 			isa = PBXGroup;
 			children = (
+				87109DB726A748F6006A8236 /* Entities */,
 				875AB73E26A23E9400D4F632 /* Detail */,
 				87C18FAA269CF6A500F0F813 /* AnimalsTableViewCell */,
 				87C18F7A269CF54700F0F813 /* AppDelegate.swift */,
@@ -301,6 +312,7 @@
 			files = (
 				87C18F7F269CF54700F0F813 /* ViewController.swift in Sources */,
 				87C18FAD269CF6BE00F0F813 /* AnimalsTableViewCell.swift in Sources */,
+				87109DB926A74906006A8236 /* Entities.swift in Sources */,
 				87C18F7B269CF54700F0F813 /* AppDelegate.swift in Sources */,
 				87C18F7D269CF54700F0F813 /* SceneDelegate.swift in Sources */,
 				876FB07926A27898006D412C /* DetailAnimalsTableViewCell.swift in Sources */,
