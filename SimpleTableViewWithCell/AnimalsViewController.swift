@@ -8,7 +8,7 @@
 import UIKit
 
  
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AnimalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var dataAnimals:Results?
   
