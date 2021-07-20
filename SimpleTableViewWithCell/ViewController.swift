@@ -7,30 +7,49 @@
 
 import UIKit
 
+struct Results:Codable{
+    let data:[Animals]
+}
+
+struct Animals:Codable{
+    let type:String
+    let image:String
+    let description:[String]
+}
+
+//struct Description:Codable{
+//    let features:String
+//}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let data = ["perro","gato","caballo"]
-    let image = ["perro","gato","caballo"]
+    
+    var dataAnimals:Results?
+  
+    
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        readJson()
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
         let nib = UINib(nibName: "AnimalsTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AnimalsTableViewCell")
         self.title = "Animals Example"
+        tableView.rowHeight = 200
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return dataAnimals?.data.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell =  tableView.dequeueReusableCell(withIdentifier: "AnimalsTableViewCell", for: indexPath) as! AnimalsTableViewCell
-        let image = image[indexPath.row]
-        cell.animalLabel.text = data[indexPath.row]
-        cell.animalImageView.image = UIImage(named: image)
+        let image = dataAnimals?.data[indexPath.row].image
+        let type = dataAnimals?.data[indexPath.row].type
+        cell.animalLabel.text = type
+        cell.animalImageView.image = UIImage(named: image!)
         cell.animalImageView.layer.cornerRadius =  10
         cell.animalImageView.clipsToBounds = true
         cell.layer.shadowColor = UIColor.lightGray.cgColor
@@ -44,13 +63,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let data = data[indexPath.row]
-        let vc = DetailAnimalsViewController(data: data)
+        let data = dataAnimals?.data[indexPath.row]
+        let vc = DetailAnimalsViewController(data: data!)
         navigationController?.pushViewController(vc, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
         
-        print("tapped \(data)")
+        //sprint("tapped \(data)")
         
+    }
+    
+    func readJson(){
+        guard let path = Bundle.main.path(forResource: "data", ofType: "json") else {
+            return
+        }
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let jsonData = try Data(contentsOf: url)
+            dataAnimals = try JSONDecoder().decode(Results.self, from: jsonData)
+            if let dataAnimals = dataAnimals {
+                print(dataAnimals)
+           
+            } else {
+                print ("failed to parsed json")
+            }
+        }
+        catch{
+            print("error")
+        }
     }
 
 }

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87109DB626A73CC4006A8236 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 87109DB526A73CC4006A8236 /* data.json */; };
 		875AB74026A23EB000D4F632 /* DetailAnimalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875AB73F26A23EB000D4F632 /* DetailAnimalsViewController.swift */; };
+		875AB74426A250A500D4F632 /* DetailAnimalsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875AB74326A250A500D4F632 /* DetailAnimalsView.xib */; };
+		876FB07926A27898006D412C /* DetailAnimalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876FB07726A27898006D412C /* DetailAnimalsTableViewCell.swift */; };
+		876FB07A26A27898006D412C /* DetailAnimalsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 876FB07826A27898006D412C /* DetailAnimalsTableViewCell.xib */; };
 		87C18F7B269CF54700F0F813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C18F7A269CF54700F0F813 /* AppDelegate.swift */; };
 		87C18F7D269CF54700F0F813 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C18F7C269CF54700F0F813 /* SceneDelegate.swift */; };
 		87C18F7F269CF54700F0F813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C18F7E269CF54700F0F813 /* ViewController.swift */; };
@@ -38,7 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87109DB526A73CC4006A8236 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		875AB73F26A23EB000D4F632 /* DetailAnimalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnimalsViewController.swift; sourceTree = "<group>"; };
+		875AB74326A250A500D4F632 /* DetailAnimalsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAnimalsView.xib; sourceTree = "<group>"; };
+		876FB07726A27898006D412C /* DetailAnimalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnimalsTableViewCell.swift; sourceTree = "<group>"; };
+		876FB07826A27898006D412C /* DetailAnimalsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAnimalsTableViewCell.xib; sourceTree = "<group>"; };
 		87C18F77269CF54700F0F813 /* SimpleTableViewWithCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTableViewWithCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C18F7A269CF54700F0F813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C18F7C269CF54700F0F813 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				875AB73F26A23EB000D4F632 /* DetailAnimalsViewController.swift */,
+				875AB74326A250A500D4F632 /* DetailAnimalsView.xib */,
+				876FB07726A27898006D412C /* DetailAnimalsTableViewCell.swift */,
+				876FB07826A27898006D412C /* DetailAnimalsTableViewCell.xib */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 				87C18F83269CF54800F0F813 /* Assets.xcassets */,
 				87C18F85269CF54800F0F813 /* LaunchScreen.storyboard */,
 				87C18F88269CF54800F0F813 /* Info.plist */,
+				87109DB526A73CC4006A8236 /* data.json */,
 			);
 			path = SimpleTableViewWithCell;
 			sourceTree = "<group>";
@@ -256,7 +268,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876FB07A26A27898006D412C /* DetailAnimalsTableViewCell.xib in Resources */,
+				87109DB626A73CC4006A8236 /* data.json in Resources */,
 				87C18F87269CF54800F0F813 /* LaunchScreen.storyboard in Resources */,
+				875AB74426A250A500D4F632 /* DetailAnimalsView.xib in Resources */,
 				87C18FAE269CF6BE00F0F813 /* AnimalsTableViewCell.xib in Resources */,
 				87C18F84269CF54800F0F813 /* Assets.xcassets in Resources */,
 				87C18F82269CF54700F0F813 /* Main.storyboard in Resources */,
@@ -288,6 +303,7 @@
 				87C18FAD269CF6BE00F0F813 /* AnimalsTableViewCell.swift in Sources */,
 				87C18F7B269CF54700F0F813 /* AppDelegate.swift in Sources */,
 				87C18F7D269CF54700F0F813 /* SceneDelegate.swift in Sources */,
+				876FB07926A27898006D412C /* DetailAnimalsTableViewCell.swift in Sources */,
 				875AB74026A23EB000D4F632 /* DetailAnimalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,26 +17,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-8k-uSW">
-                        <rect key="frame" x="280" y="20" width="100" height="100"/>
+                        <rect key="frame" x="247" y="45" width="100" height="100"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="8jN-sL-vbJ"/>
-                            <constraint firstAttribute="height" constant="100" id="t2O-8J-m3z"/>
+                            <constraint firstAttribute="width" constant="100" id="HMa-As-LmJ"/>
+                            <constraint firstAttribute="height" constant="100" id="r3F-xi-UGt"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akm-U2-mlW">
-                        <rect key="frame" x="40" y="61" width="42" height="28"/>
+                        <rect key="frame" x="40" y="61" width="115" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="MYN-nl-Bx6"/>
+                            <constraint firstAttribute="width" constant="115" id="PJz-iF-YKG"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Rwl-8k-uSW" secondAttribute="trailing" constant="20" id="2hA-tN-gbk"/>
-                    <constraint firstAttribute="bottom" secondItem="Rwl-8k-uSW" secondAttribute="bottom" constant="80" id="52U-WQ-GoP"/>
-                    <constraint firstItem="akm-U2-mlW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Akd-h7-atD"/>
-                    <constraint firstItem="Rwl-8k-uSW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="fes-60-2hN"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="akm-U2-mlW" secondAttribute="bottom" constant="100" id="leB-ze-38j"/>
-                    <constraint firstItem="akm-U2-mlW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="50" id="xo3-wu-EV8"/>
+                    <constraint firstItem="akm-U2-mlW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="3Zz-RQ-mYM"/>
+                    <constraint firstAttribute="trailing" secondItem="Rwl-8k-uSW" secondAttribute="trailing" constant="53" id="9eV-mx-pCE"/>
+                    <constraint firstItem="Rwl-8k-uSW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="LhH-4r-BHH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="akm-U2-mlW" secondAttribute="bottom" constant="60" id="k6x-K3-mN0"/>
+                    <constraint firstAttribute="bottom" secondItem="Rwl-8k-uSW" secondAttribute="bottom" constant="55" id="pac-NK-RCB"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
